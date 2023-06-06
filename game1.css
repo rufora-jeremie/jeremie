@@ -1,0 +1,289 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+
+
+
+    }
+    body{
+    
+        background: url(./tigris.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .images{
+        width: 100px;
+        height: 100px;
+        border-radius: 45px;
+    }
+    h4{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: #02fb3c;
+    }
+    span{
+        font-family: Arial, Helvetica, sans-serif;
+        color: aqua;
+        font-size: larger;
+        font-weight: 200;
+    }
+.hero header .logo h2 a{
+    display:block;
+    font-size:32px;
+    font-weight: 600;
+    text-decoration: none;
+    color:#fac301;
+    padding: 20px;
+    
+}
+.hero header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  padding:40px  0 30px
+}
+nav ul li{
+ list-style: none;
+ display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    color:#fac301;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight:600;
+    
+   border-bottom: 2px solid transparent;
+    transition: .4s;
+
+}
+nav ul li:not(:last-child) a:hover,
+nav ul li:not(:last-child) a:focus{
+    border-bottom: 2px solid #fac301;
+}
+nav ul li.active a{
+    border-bottom: 2px solid #fac301;
+}
+nav ul li.btn a{
+    background:transparent;
+    color:#fac301;
+    border:1px solid #e9a719;
+    padding:9px 20px;
+    border-radius: 30px;
+    line-height: 1.4;
+    font-size:14px;
+    font-weight:500;
+    margin-left: 150px;
+}
+nav ul li.btn:hover a{
+    border: 1px solid #fac301;
+    color:black;
+    background: #fac301;
+    transition:.4s;
+}
+.content{
+    padding-bottom: 190px;
+}
+.content .main-text{
+    position:relative;
+    z-index:2;
+    margin-top:50px;
+}
+.content .main-text h6{
+    font-size: 14px;
+    font-weight: 400;
+    color:#fac301;
+    margin-bottom: 40px;
+    padding: 20px;
+
+}
+.content .main-text h1{
+    font-size:100px;
+    line-height: 1;
+    color:#fac301;
+    margin: 0px 0px 45px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 20px;
+
+}
+.content .main-text h3{
+    font-size:18px;
+    font-weight:600;
+    color:#fac301;
+    padding: 20px;
+}
+.content .main-text p{
+    max-width: 100%;
+    width:480px;
+    color:#fac301;
+    line-height: 1.8;
+    font-size: 15px;
+    margin-bottom: 50px;
+    padding: 20px;
+}
+.content .main-text a{
+    display: inline-block;
+    text-decoration: none;
+    color:black;
+    background:greenyellow;
+    border: 1px solid firebrick ;
+    padding:9px 20px;
+    line-height: 1.4;
+    border-radius: 30px;
+    font-size:14px;
+    font-weight:500;
+}
+.content .main-text a:hover{
+    transform:scale(1.2);
+    border: 1px solid #fac301;
+    background: transparent;
+    color:greenyellow;
+    transition:.4s
+}
+.content .main-text a.cta{
+    border: 1px solid #fac301;
+    color:black;
+    background: transparent;
+    margin-left: 20px;
+    margin: 20px;
+}
+.content .main-text a.cta svg{
+    margin-right:12px;
+    color:white;
+}
+.content .main-text a.cta:hover{
+ color:black;
+ background: #fac301;
+ border: 1px solid aqua ;
+ transition:.4s;
+}
+.content .main-text img{
+    float:right;
+    display:inline-flex;
+    background:#d57e12;
+    padding: 30px;
+}
+.content .social{
+    position: relative;
+    z-index: 2;
+    margin-bottom:400px;
+    padding-bottom: 60px;
+}
+.content .social a{
+    display:inline-block;
+    color:#f5dca8;
+    padding-bottom:90px ;
+    margin-right: 25px;
+    font-size:20px;
+
+}
+.content .social a:hover{
+    transform:scale(1.1);
+    transition:.4s;
+    color:white;
+}
+.images{
+    float:left;
+    position: relative;
+    z-index: 2;
+    margin-left:200px;
+    padding-bottom: 160px;
+
+    
+}
+.img1{
+    width:600px;
+    margin-bottom:100px;
+    padding-top: 100px;
+    padding: 20px;
+    margin: 30px;
+}
+.div-select{
+    margin: 10px;
+    padding: 10px;
+    color: #d57e12;
+}
+li.label h4{
+    color: #d57e12;
+    padding: 20px;
+}
+footer{
+    width: 100%;
+    padding: 30px 0 0 20px;
+    background: #eeeeee;
+ }
+
+
+footer .footer_main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+footer .footer_main .footer_tag{
+    text-align: center;
+}
+
+footer .footer_main .footer_tag h2{
+    color: black;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+
+footer .footer_main .footer_tag p{
+    margin: 10px 0;
+}
+
+footer .footer_main .footer_tag i{
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+footer .footer_main .footer_tag i:hover{
+    transform: rotate(360deg);
+    color: #fac031;
+}
+
+footer .end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+footer .end span{
+    color: #fac031;
+    margin-left: 10px
+}
+
+
+
+::-webkit-scrollbar{
+    width: 13px;
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 15px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb{
+    background:#fac031;
+    border-radius: 15px;
+}
+
+
+
+
+
+ 
+    
+
+
+
+

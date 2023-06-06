@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="active"><a href="game1.html">Home</a></li>
+            <li><a href="cards.html">Cards</a></li>
+            <li><a href="about2.html">About Us</a></li>
+            <li><a href="endUsers.html">end user</a></li>
+        </ul>
+    </nav>
+    <div class="box">
+        <h3>Register</h3>
+        <form>
+            <input type="text" placeholder="first name" required>
+            <input type="text" placeholder="second name" required>
+            <input type="email" placeholder="User Email" required>
+            <input type="text" placeholder="Head master's name">
+            <input type="radio" name="Male">Male
+            <input type="radio" name="Male">Female
+            <input type="password" placeholder="Telephone number" required>
+    
+        </form>
+       <a href="Register.html">Register</a>
+       <button onclick="btn()">save</button>
+    </div>
+    <script>
+        let users = [
+            {
+                firstName: 'rufora',
+                secondName: 'jeremie',
+            },
+        ]
+        let newUser = [
+            {
+                firstName: '',
+                secondName: ''
+            }
+        ]
+        let inputs = [...document.querySelectorAll('input')]
+        let clientLocal = JSON.parse(localStorage.getItem('user'))
+        if (clientLocal) {
+            users = clientLocal
+        }
+        function btn() {
+            let clients = JSON.parse(localStorage.getItem('user'))
+            newUser[0].firstName = inputs[0].value
+            newUser[0].secondName = inputs[1].value
+            users.push(newUser[0])
+            localStorage.setItem('user', JSON.stringify(users))
+
+            }
+            localStorage.clear()
+    </script>
+</body>
+
+</html>

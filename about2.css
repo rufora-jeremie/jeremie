@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+;
+}
+body{
+    background: url(./tigris.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+   }
+   nav ul li a{
+       text-decoration: none;
+       color:greenyellow;
+       margin-left: 60px;
+       font-size: 15px;
+       font-weight:600;
+       
+       border-bottom: 2px solid transparent;
+       transition: .4s;
+   
+   }
+   nav ul li:not(:last-child) a:hover,
+   nav ul li:not(:last-child) a:focus{
+       border-bottom: 2px solid green;
+   }
+   nav ul li.active a{
+       border-bottom: 2px solid greenyellow;
+   }
+   nav ul li.btn a{
+       background:transparent;
+       color:green;
+       border:1px solid #e9a719;
+       padding:9px 20px;
+       border-radius: 30px;
+       line-height: 1.4;
+       font-size:14px;
+       font-weight:500;
+       margin-left: 150px;
+   }
+   nav ul li.btn:hover a{
+       border: 1px solid green;
+       color:black;
+       background: greenyellow;
+       transition:.4s;
+   }
+   h3{
+    padding: 50px;
+
+   }
+h1{
+    padding: 40px;
+}
